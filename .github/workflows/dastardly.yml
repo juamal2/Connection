@@ -29,3 +29,9 @@ jobs:
         uses: PortSwigger/dastardly-github-action@main
         with:
           target-url: 'https://breo.beds.ac.uk/?new_loc=%2Fultra%2Fcourse'
+      - name: Publish Test Report
+        if: always()
+        uses: amana/action-junit-report
+        with:
+          report_paths: '**/dastardly-report.xml'
+          require_tests: true
