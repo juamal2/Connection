@@ -35,4 +35,4 @@ jobs:
         uses: JohnMeyerhoff/JunitAnnotations@v1.2.0
         with:
           # [Path] The location of the folder(s) containing your code files
-          source_dir: .github/workflows/maven.yml
+          source_dir: 
