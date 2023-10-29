@@ -29,10 +29,8 @@ jobs:
         uses: PortSwigger/dastardly-github-action@main
         with:
           target-url: 'https://breo.beds.ac.uk/?new_loc=%2Fultra%2Fcourse'
-      - name: JUNIT Test Report Tool
-        # You may pin to the exact commit or the version.
-        # uses: JohnMeyerhoff/JunitAnnotations@0b633bca6b09f3301a6fa678310c53e754e7cf16
-        uses: JohnMeyerhoff/JunitAnnotations@v1.2.0
+      - name: Publish Test Report
+        uses: mikepenz/action-junit-report@v4
+        if: success() || failure() # always run even if the previous step fails
         with:
-          # [Path] The location of the folder(s) containing your code files
-          source_dir: A1Amana/Connection
+          report_paths: '**/build/test-results/test/TEST-*.xml'
