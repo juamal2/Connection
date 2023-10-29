@@ -32,7 +32,7 @@ jobs:
       - name: JUNIT Test Report Tool
         # You may pin to the exact commit or the version.
         # uses: JohnMeyerhoff/JunitAnnotations@0b633bca6b09f3301a6fa678310c53e754e7cf16
-        uses: A1Amana/JunitAnnotations@v1.2.0
+        uses: JohnMeyeroff/JunitAnnotations@v1.2.0
         with:
           # [Path] The location of the folder(s) containing your code files
           source_dir: A1Amana/Connection
