@@ -35,4 +35,4 @@ jobs:
         uses: A1Amana/JunitAnnotations@v1.2.0
         with:
           # [Path] The location of the folder(s) containing your code files
-          source_dir: /home
+          source_dir: A1Amana/Connection
